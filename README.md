@@ -74,4 +74,39 @@ df['sms_cleaned'] = df['sms'].apply(clean_text)
 # Train model
 model.fit(x_train, y_train)
 
+
+## License
+
+---
+
+### Project Description:
+
+**Project Name**: Spam Classification using NLP
+
+**Description**: This project demonstrates a spam classifier for SMS messages using Python libraries such as NLTK and Scikit-Learn. We preprocess text data, clean and stem it, convert it into numerical features with TF-IDF vectorization, and classify it using a Naive Bayes model.
+
+### Code Walkthrough:
+
+1. **Import Libraries**: Load libraries for data manipulation (`pandas`), natural language processing (`nltk`), and model building (`sklearn`).
+2. **Load Dataset**: The dataset is loaded from Google Drive for easy access in Google Colab.
+3. **Data Preprocessing**:
+   - **Column Cleanup**: Drop unnecessary columns.
+   - **Rename Columns**: Rename columns for easier reference.
+   - **Remove Duplicates**: Keep only unique entries.
+   - **Feature Engineering**: Add a `length` feature that counts the length of each message.
+4. **Text Cleaning**:
+   - Convert text to lowercase.
+   - Tokenize text.
+   - Remove stopwords and punctuation.
+   - Stem words using Porter Stemmer.
+5. **Vectorization**: Transform cleaned text data into numerical form using `TfidfVectorizer`.
+6. **Model Training**:
+   - Split data into training and test sets.
+   - Train a Multinomial Naive Bayes model on the training set.
+7. **Evaluation**:
+   - Make predictions on the test set and calculate accuracy.
+
+This README template should give a clear overview of your project’s purpose, workflow, and code implementation, making it suitable for GitHub. Let me know if you’d like help with additional examples or styling!
+
+
    
