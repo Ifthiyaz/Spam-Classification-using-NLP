@@ -22,46 +22,40 @@ To run this project locally, ensure you have the following dependencies installe
 - NLTK
 - Pandas
 
-Dataset
-The dataset used in this project is a collection of SMS messages labeled as spam or ham (non-spam). The dataset should be saved in your Google Drive for access within Google Colab.
+# Spam Classification using NLP
 
-Data Preprocessing
+This project builds a simple spam classifier using NLP and machine learning techniques, focused on identifying spam vs. ham (non-spam) messages. It preprocesses text data, converts it into numerical features, and trains a Naive Bayes classifier to distinguish between spam and non-spam messages.
+
+## Dataset
+The dataset used is a collection of SMS messages labeled as spam or ham. The dataset should be saved in Google Drive for access within Google Colab.
+
+## Data Preprocessing
 The preprocessing steps include:
+1. **Data Loading**: Load the dataset from Google Drive.
+2. **Cleaning the Data**: Drop unnecessary columns and rename relevant columns for readability.
+3. **Removing Duplicates**: Ensure each message is unique.
+4. **Tokenization and Text Cleaning**:
+   - Convert text to lowercase.
+   - Tokenize words and remove non-alphanumeric characters.
+   - Remove stopwords (e.g., "the", "and").
+   - Apply stemming using Porter Stemmer to reduce words to their root forms.
 
-Data Loading: Loading the dataset from Google Drive.
-Cleaning the Data: Dropping unnecessary columns and renaming relevant columns for readability.
-Removing Duplicates: Ensuring each message is unique by dropping duplicates.
-Tokenization and Text Cleaning:
-Converting text to lowercase.
-Tokenizing words and removing non-alphanumeric characters.
-Removing stopwords (common words like 'the', 'and' that don’t contribute to classification).
-Stemming words (reducing words to their root form) using Porter Stemmer.
-Model Training
-Text Vectorization: Using TF-IDF (Term Frequency-Inverse Document Frequency) vectorizer to convert text messages into numerical format.
-Splitting the Data: Dividing data into training and test sets.
-Training the Model: Using a Multinomial Naive Bayes classifier, which is effective for text classification.
-Evaluation
-After training the model, it’s evaluated on the test set using accuracy as a metric to measure its performance.
+## Model Training
+1. **Text Vectorization**: Use TF-IDF (Term Frequency-Inverse Document Frequency) vectorizer to convert messages into numerical format.
+2. **Splitting the Data**: Divide data into training and test sets.
+3. **Training the Model**: Train a Multinomial Naive Bayes classifier for text classification.
 
-Results
-The classifier outputs an accuracy score, indicating how well the model can distinguish between spam and non-spam messages.
+## Evaluation
+The model is evaluated on the test set using accuracy to measure its performance.
 
-Accuracy Score: Display the model's accuracy score here.
+## Results
+The classifier outputs an accuracy score that indicates its ability to distinguish between spam and non-spam messages.
 
-Example Output:
+- **Accuracy Score**: Display the model's accuracy here.
+  ![Alt text](images/model_output.PNG)
 
-Add images or screenshots of model output here
-
-Usage
+## Usage
 To use this project:
-
-Clone the repository.
-Place the dataset in the appropriate folder.
-Run the notebook on Google Colab or a similar environment with access to Google Drive.
-  
-- Scikit-Learn
-
-You can install the required packages by running:
-```bash
-pip install pandas nltk scikit-learn
-
+1. Clone the repository.
+2. Place the dataset in the appropriate folder.
+3. Run the notebook on Google Colab or a similar environment with access to Google Drive.
