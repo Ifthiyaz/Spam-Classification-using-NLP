@@ -21,6 +21,44 @@ To run this project locally, ensure you have the following dependencies installe
 - Python 3.x
 - NLTK
 - Pandas
+
+Dataset
+The dataset used in this project is a collection of SMS messages labeled as spam or ham (non-spam). The dataset should be saved in your Google Drive for access within Google Colab.
+
+Data Preprocessing
+The preprocessing steps include:
+
+Data Loading: Loading the dataset from Google Drive.
+Cleaning the Data: Dropping unnecessary columns and renaming relevant columns for readability.
+Removing Duplicates: Ensuring each message is unique by dropping duplicates.
+Tokenization and Text Cleaning:
+Converting text to lowercase.
+Tokenizing words and removing non-alphanumeric characters.
+Removing stopwords (common words like 'the', 'and' that don’t contribute to classification).
+Stemming words (reducing words to their root form) using Porter Stemmer.
+Model Training
+Text Vectorization: Using TF-IDF (Term Frequency-Inverse Document Frequency) vectorizer to convert text messages into numerical format.
+Splitting the Data: Dividing data into training and test sets.
+Training the Model: Using a Multinomial Naive Bayes classifier, which is effective for text classification.
+Evaluation
+After training the model, it’s evaluated on the test set using accuracy as a metric to measure its performance.
+
+Results
+The classifier outputs an accuracy score, indicating how well the model can distinguish between spam and non-spam messages.
+
+Accuracy Score: Display the model's accuracy score here.
+
+Example Output:
+
+Add images or screenshots of model output here
+
+Usage
+To use this project:
+
+Clone the repository.
+Place the dataset in the appropriate folder.
+Run the notebook on Google Colab or a similar environment with access to Google Drive.
+  
 - Scikit-Learn
 
 You can install the required packages by running:
