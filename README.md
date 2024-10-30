@@ -59,3 +59,14 @@ To use this project:
 1. Clone the repository.
 2. Place the dataset in the appropriate folder.
 3. Run the notebook on Google Colab or a similar environment with access to Google Drive.
+
+## Code 
+# Load dataset
+df = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/Spam Classification using NLP Data Set.csv', encoding='latin-1')
+
+# Preprocess and clean data
+df['sms_cleaned'] = df['sms'].apply(clean_text)
+
+# Train model
+model.fit(x_train, y_train)
+   
