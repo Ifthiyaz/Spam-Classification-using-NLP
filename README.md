@@ -77,10 +77,9 @@ model.fit(x_train, y_train)
 
 ## License
 
----
 # Spam Classification using NLP
 
-## Project Description
+**Project Description**
 
 **Project Name**: Spam Classification using NLP
 
@@ -88,7 +87,7 @@ model.fit(x_train, y_train)
 
 ---
 
-## Code Walkthrough
+**Code Walkthrough**
 
 1. **Import Libraries**: Load libraries for data manipulation (`pandas`), natural language processing (`nltk`), and model building (`sklearn`).
 
@@ -124,16 +123,15 @@ model.fit(x_train, y_train)
     model.fit(x_train, y_train)
     ```
 
-7. **Evaluation**:
-   - Make predictions on the test set and calculate accuracy.
+7. **Evaluation**: Make predictions on the test set and calculate accuracy.
 
 ---
 
-## Contributing
+**Contributing**
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+**License**
 
 This project is licensed under the MIT License.
 
