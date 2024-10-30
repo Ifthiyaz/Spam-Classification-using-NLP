@@ -62,7 +62,7 @@ To use this project:
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Please feel free to submit a Pull Request.
 
 ## License
 
