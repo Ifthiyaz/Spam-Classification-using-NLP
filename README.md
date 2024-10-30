@@ -52,7 +52,7 @@ The model is evaluated on the test set using accuracy to measure its performance
 The classifier outputs an accuracy score that indicates its ability to distinguish between spam and non-spam messages.
 
 - **Accuracy Score**: Display the model's accuracy here.
-  ![Alt text](images/model_output.PNG)
+  ![Model Output Example](model_output.PNG)
 
 ## Usage
 To use this project:
