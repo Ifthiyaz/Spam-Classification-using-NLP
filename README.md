@@ -3,10 +3,10 @@
 
 This project focuses on building a simple spam classifier using Natural Language Processing (NLP) and Machine Learning techniques. The classifier is trained to distinguish between spam and non-spam (ham) SMS messages. 
 
+![](image.png)
+
 ## Project Overview
 Spam detection is an important application in NLP, helping to filter unwanted messages. This project utilizes the Naive Bayes algorithm for classification, a popular choice for text classification problems.
-
-![](image.png)
 
 ## Table of Contents
 - [Installation](#installation)
