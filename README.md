@@ -6,6 +6,8 @@ This project focuses on building a simple spam classifier using Natural Language
 ## Project Overview
 Spam detection is an important application in NLP, helping to filter unwanted messages. This project utilizes the Naive Bayes algorithm for classification, a popular choice for text classification problems.
 
+  ![](image.PNG)
+
 ## Table of Contents
 - [Installation](#installation)
 - [Dataset](#dataset)
